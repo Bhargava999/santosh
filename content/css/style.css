@@ -1,4 +1,4 @@
-﻿
+
 /* ══════════════════════════════════════
                CSS VARIABLES / TOKENS
             ══════════════════════════════════════ */
@@ -1111,6 +1111,127 @@ strong {
         min-height: 600px;
         border: none;
     }
+
+/* Custom styles for native events HTML */
+.route-app__wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.route-app__content-wrap {
+    width: 100%;
+}
+
+.app-list-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2.5rem;
+    width: 100%;
+}
+
+.app-link-to {
+    display: block;
+    height: 100%;
+}
+
+.kit-list-item {
+    background: var(--light-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.kit-list-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.kit-list-item__image-wrap {
+    position: relative;
+    width: 100%;
+}
+
+.kit-image {
+    position: relative;
+    overflow: hidden;
+    background-color: #ededed;
+}
+
+.kit-image__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kit-image__watermark {
+    display: none;
+}
+
+.app-list-content__date-overlay {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: var(--accent);
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    z-index: 2;
+}
+
+.app-list-content__date-overlay-month {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    opacity: 0.9;
+}
+
+.app-list-content__date-overlay-date {
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+.kit-list-item__text {
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.kit-list-item__title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--black);
+}
+
+.kit-list-item__subtitle {
+    font-size: 0.9rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.kit-list-item__summary {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.kit-pagination {
+    display: none;
+}
 
 /* ══════════════════════════════════════
                FOOTER
