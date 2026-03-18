@@ -888,7 +888,7 @@ strong {
 .sundays-right {
     background-size: cover;
     background-position: center;
-    background-image: url('../Images/sundayright.jpeg');
+    background-image: url('../Images/sunday-right.jpeg');
     min-height: 600px;
     filter: brightness(0.8);
 }
@@ -915,7 +915,7 @@ strong {
 .groups-left {
     background-size: cover;
     background-position: left center;
-    background-image: url('../Images/groupleft.jpeg');
+    background-image: url('../Images/group-left.jpeg');
     min-height: 600px;
     filter: brightness(0.8);
 }
